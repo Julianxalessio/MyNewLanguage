@@ -10,6 +10,6 @@ Er unterstützt Variablen, Ausgaben und einfache Bedingungsblöcke (`incase`).
 - `write (*<String>*)\` – gibt einen Text aus
 - `incase <Bedingung> { ... }` – führt einen Block nur aus, wenn die Bedingung wahr ist
 
-### Develepor
+## Develepor
 
 Julian Alessio Lombardo
