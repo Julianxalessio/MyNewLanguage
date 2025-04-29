@@ -18,6 +18,7 @@ Er unterstützt Variablen, Ausgaben und einfache Bedingungsblöcke (`incase`).
 
 - `run.py` - Der Interpreter
 - `my_program.mini` - Der Code
+
 Es könne noch mehr von den Code-Files erstellt werden, diese müssen dann aber in run.py hinzugefügt werden.
 
 ## Develepor
