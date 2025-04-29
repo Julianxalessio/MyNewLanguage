@@ -1,0 +1,7 @@
+set x = 30 + 10\
+write (x)\
+set y = 0\
+incase x == 40 {
+    write (y)\
+}
+write (*Ende*)\
