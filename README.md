@@ -10,6 +10,16 @@ Er unterstützt Variablen, Ausgaben und einfache Bedingungsblöcke (`incase`).
 - `write (*<String>*)\` – gibt einen Text aus
 - `incase <Bedingung> { ... }` – führt einen Block nur aus, wenn die Bedingung wahr ist
 
+## Run Interpretrer
+
+- `python interpreter.py`
+
+## Files
+
+- `run.py` - Der Interpreter
+- `my_program.mini` - Der Code
+Es könne noch mehr von den Code-Files erstellt werden, diese müssen dann aber in run.py hinzugefügt werden.
+
 ## Develepor
 
 Julian Alessio Lombardo
