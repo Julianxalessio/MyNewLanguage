@@ -5,3 +5,5 @@ incase x == 40 {
     write (y)\
 }
 write (*Ende*)\
+input (a, What is your name?)\
+write (a)\

@@ -20,6 +20,27 @@ def interpret(line):
         VarName = parts[0].strip()
         VarValue = eval(parts[1].strip(), {}, variables)
         variables[VarName] = VarValue
+    
+    elif line.startswith("input (") and line.endswith("\\"):
+        content = line[len("input ("):-2].strip()  # Nur 1 Zeichen abschneiden!
+
+        # Zerlege anhand von Komma
+        parts = content.split(",", 1)
+        if len(parts) != 2:
+            print("Error: Ungültiges input-Format")
+            return
+
+        varname = parts[0].strip()
+        frage = parts[1].strip()
+
+        # Benutzer nach Eingabe fragen
+        user_input = input(frage + " ")
+        try:
+            value = eval(user_input, {}, variables)
+        except:
+            value = user_input  # Wenn keine Zahl oder Ausdruck, dann als String
+
+        variables[varname] = value    
 
     elif line.startswith("write (") and line.endswith(")\\"):
         content = line[7:-2].strip()
@@ -48,7 +69,6 @@ def interpret(line):
 
 with open("my_program.mini", "r") as file:
     lines = file.readlines()
-
 i = 0
 while i < len(lines):
     result = interpret(lines[i])

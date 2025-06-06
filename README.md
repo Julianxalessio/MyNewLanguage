@@ -5,10 +5,11 @@ Er unterstützt Variablen, Ausgaben und einfache Bedingungsblöcke (`incase`).
 
 ## 🔧 Funktionen
 
-- `set <VariableName> = <VariableValue>` – legt eine Variable an
+- `set <VariableName> = <VariableValue>\` – legt eine Variable an
 - `write (<VariableName>)\` – gibt eine Variable aus
 - `write (*<String>*)\` – gibt einen Text aus
 - `incase <Bedingung> { ... }` – führt einen Block nur aus, wenn die Bedingung wahr ist
+- `input (<VariableName>, <Question>)\` - fragt den User nach einer Eingabe
 
 ## Run Interpretrer
 
